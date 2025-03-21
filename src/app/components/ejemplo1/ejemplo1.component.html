@@ -1,0 +1,22 @@
+
+<div class="mb-4 p-8 flex items-center justify-center">
+    <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
+        <ng-template #header>
+            <img alt="Card" class="w-full" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />
+        </ng-template>
+        <ng-template #title> ejemplo 1 de señales  </ng-template>
+        <ng-template #subtitle> conte simples </ng-template>
+        <p>
+           conteo con señal: {{ conteoConSenal() }}
+        </p>
+        <p>
+            conteo sin señal: {{ conteoSinSenal }}
+         </p>
+        <ng-template #footer>
+            <div class="flex gap-4 mt-1">
+                <p-button label="Incrementar" (click) = "incrementarConteo()" severity="secondary" class="w-full" [outlined]="true" styleClass="w-full" />
+                <p-button label="Decrementar" (click) = "decrementarConteo()" class="w-full" styleClass="w-full" />
+            </div>
+        </ng-template>
+    </p-card>
+</div>
