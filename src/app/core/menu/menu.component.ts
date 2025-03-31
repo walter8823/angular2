@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Menubar } from 'primeng/menubar';
 import { MenuItem } from 'primeng/api';
 
-
 @Component({
   selector: 'app-menu',
   imports: [Menubar],
@@ -46,7 +45,28 @@ export class MenuComponent implements OnInit{
               label: 'Ejemplo5',
               icon: 'pi pi-wave-pulse',
               routerLink: 'ejemplo5'
+            },
+            {
+              label: 'Ejemplo6',
+              icon: 'pi pi-wave-pulse',
+              routerLink: 'ejemplo6'
+            },
+            {
+              label: 'Ejemplo7',
+              icon: 'pi pi-wave-pulse',
+              routerLink: 'ejemplo7'
+            },
+            {
+              label: 'Carrito de compras',
+              icon: 'pi pi-wave-pulse',
+              routerLink: 'cart'
+            },
+            {
+              label: 'menu back',
+              icon: 'pi pi-wave-pulse',
+              routerLink: 'productos-back'
             }
+            
             
           ]
       },

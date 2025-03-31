@@ -41,7 +41,8 @@ export class Ejemplo5Component {
     if (this.precio() <= 0) return;
 
     this.listado.update( (historial: any[]) => {
-      const item = {
+      const item = 
+      {
         precio: this.precio(),
         IVAEnPorcentaje: this.IVAEnPorcentaje(),
         iva: this.totalIva(),
